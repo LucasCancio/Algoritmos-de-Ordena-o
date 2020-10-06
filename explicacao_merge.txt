@@ -1,0 +1,41 @@
+    [0 1 10 9 2 3 4 5]
+    ~Dividindo o array~
+    [0 1 10 9]    [2 3 4 5]
+    ~Dividindo o array~
+    [0 1]     [10 9]    [2 3]     [4 5]
+    ~Dividindo o array~
+    [0]   [1]   [10]  [9]  [2]   [3]   [4]   [5]
+
+    ~Juntando o array, e ordenando (menor na esquerda e maior na direita)~
+    [0 1]     [9 10]    [2 3]    [4 5]
+
+    ~Juntando o array, e ordenando (menor na esquerda e maior na direita), de forma que compare 
+    o mais da esquerda de uma parte, com o mais da esquerda da outra~
+    [0 1] e [9 10]
+    0 e 9, quem é menor? 0, então [0]
+    [X 1] e [9 10]
+    1 e 9, quem é menor? 1, então [0 1]
+    [X X] e [9 10]
+    9 e 10, quem é menor? 9, então [0 1 9 10]
+
+    [2 3] e [4 5]
+    2 e 4, quem é menor? 2, então [2]
+    [X 3] e [4 5]
+    3 e 4, quem é menor? 3, então [2 3]
+    [X X] e [4 5]
+    4 e 5, quem é menor? 4, então [2 3 4 5]
+
+    [0 1 9 10] e [2 3 4 5]
+    0 e 2, quem é menor? 0, então [0]
+    [X 1 9 10] e [2 3 4 5]
+    1 e 2, quem é menor? 1, então [0 1]
+    [X X 9 10] e [2 3 4 5]
+    9 e 2, quem é menor? 2, então [0 1 2]
+    [X X 9 10] e [X 3 4 5]
+    9 e 3, quem é menor? 3, então [0 1 2 3]
+    [X X 9 10] e [X X 4 5]
+    9 e 4, quem é menor? 4, então [0 1 2 3 4]
+    [X X 9 10] e [X X X 5]
+    9 e 5, quem é menor? 5, então [0 1 2 3 4 5]
+    [X X 9 10] e [X X X X]
+    9 e 10, quem é menor? 9, então [0 1 2 3 4 5 9 10]
